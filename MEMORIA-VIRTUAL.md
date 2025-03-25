@@ -1,7 +1,7 @@
 
 # Memória Virtual
 
-[Wikipedia Page](https://en.wikipedia.org/wiki/Virtual_memory)
+[Wikipedia Page](https://en.wikipedia.org/wiki/Virtual_memory) <br>
 [Linux-VM-notes](https://github.com/lorenzo-stoakes/linux-vm-notes/blob/master/sections/page-tables.md)
 
 ## Introdução

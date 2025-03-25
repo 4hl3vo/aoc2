@@ -282,24 +282,24 @@ Depende do esquema adotado para colocação dos blocos
 
 ![img6](images/042.png)
 
-Nos sistemas de memória virtual, a *tabela de páginas* é usada para indexar a memória 
-principal
+Nos sistemas de memória virtual, a *tabela de páginas* é usada para indexar a 
+memória principal
 
 Fatores que motivam o *mapeamento totalmente assocaitivo* nas tabelas de páginas: 
 
 1. Alto custo das faltas de página 
-2. Permite que o software utilize algoritmos bastante sofisticados para substituição 
-de página 
+2. Permite que o software utilize algoritmos bastante sofisticados para 
+substituição de página 
 3. Pode ser failmente indexado, sem necessidade de hardware extra 
-4. Quanto maior o tamanho da página, menor o overhead relativo representado pelo tamanho 
-da tabela de páginas 
+4. Quanto maior o tamanho da página, menor o overhead relativo representado pelo 
+tamanho da tabela de páginas 
 
 Caches e TLBs normalmente usam esquema *associativo por conjunto* 
 
 Acesso combina indexação e busca em um conjunto pequeno de elementos 
 
-Porém, alguns sistemas mais recentes têm usado caches com *mapeamento direto* devido ao 
-pequeno tempo de acesso e simplicidade 
+Porém, alguns sistemas mais recentes têm usado caches com *mapeamento direto* 
+devido ao pequeno tempo de acesso e simplicidade 
 
 ---
 
@@ -317,11 +317,12 @@ Estratégias para a substituição de blocos: **RANDOM, LRU, FIFO**
 
 ## Vantagens do Write-back 
 
-* As palavras podem ser escritas individualmente pelo processador na velocidade da cache, 
-ao invés da velocidade da memória principal 
+* As palavras podem ser escritas individualmente pelo processador na velocidade 
+da cache, ao invés da velocidade da memória principal 
 
-* Escritas múltiplas dentro de um bloco podem ser feitas com uma única operação de escrita 
-no componente da hierarquia inferior 
+* Escritas múltiplas dentro de um bloco podem ser feitas com uma única operação 
+de escrita no componente da hierarquia inferior 
 
-* Quando os blocos são escritos de volta, o sistema pode fazer uso de uma banda passante 
-extremamente alta para efetivar a transferência, já que todo o bloco é escrito 
+* Quando os blocos são escritos de volta, o sistema pode fazer uso de uma banda 
+passante extremamente alta para efetivar a transferência, já que todo o bloco é 
+escrito 
